@@ -1,0 +1,27 @@
+{
+  "TableName": "gdpr_requests",
+	"FilterExpression": "studio_id = :studio",
+	{{
+		(() => {
+			if (gdpr_requests_studio_items_2.data.LastEvaluatedKey !== undefined) {
+				if (Object.keys(gdpr_requests_studio_items_2.data.LastEvaluatedKey).length > 0) {
+					return `"ExclusiveStartKey": {
+                    "request_id": {
+                        "S": "${gdpr_requests_studio_items_2.data.LastEvaluatedKey.request_id}"
+                    }
+                },`
+				} else {
+      		return ""
+      	}
+			} else {
+      	return ""
+      }
+		}
+		)()
+	}}
+	"ExpressionAttributeValues": {
+        ":studio": {
+            "S": "{{ SelectStudio.selectedOptionValue }}"
+        }
+    }
+}

@@ -1,0 +1,6 @@
+UPDATE temp_table
+SET Quantity = 0
+WHERE Name = 'Product1';
+
+DELETE FROM temp_table
+WHERE Name = 'Product2';

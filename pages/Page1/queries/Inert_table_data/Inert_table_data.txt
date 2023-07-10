@@ -1,0 +1,5 @@
+INSERT INTO temp_table (LieferID, Name, Quantity)
+VALUES
+    (1, 'Product 1', 10),
+    (2, 'Product 2', 5),
+    (3, 'Product 3', 8);

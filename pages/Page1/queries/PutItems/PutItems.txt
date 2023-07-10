@@ -1,0 +1,35 @@
+{
+  "TableName": "appsmith-sandbox",
+  "Item": {
+    "id": {
+      "N": "98765"
+    },
+    "request_id": {
+      "S": "req_98765"
+    },
+    "first_execution_time": {
+      "N": "1664812800"
+    },
+    "player_id_type": {
+      "S": "username"
+    },
+    "player_id_value": {
+      "S": "jane@example.com"
+    },
+    "received_time": {
+      "N": "1664892000"
+    },
+    "request_time": {
+      "N": "1664892400"
+    },
+    "request_type": {
+      "S": "delete_account"
+    },
+    "status": {
+      "S": "pending"
+    },
+    "studio_id": {
+      "S": "studio_456"
+    }
+  }
+}
